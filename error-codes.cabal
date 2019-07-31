@@ -1,0 +1,28 @@
+cabal-version:      2.4
+category:           Benchmarks
+build-type:         Simple
+name:               error-codes
+synopsis:           Writing various different error correcting codes.
+version:            0.1.0
+
+
+Library
+
+  ghc-options:
+    -O2 -fobject-code -Wall -Wunused-imports
+
+  hs-source-dirs:
+    src
+
+  build-depends:
+      base
+    , vector
+        ^>= 0.12.0.3
+    , bytestring
+        ^>= 0.10.10.0
+
+  exposed-modules:
+      CopyBytes
+
+  default-language:
+    Haskell2010
